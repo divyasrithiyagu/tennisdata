@@ -5,14 +5,20 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-
+@Table(name="sports_details")
 public class sports {
      @Id
      private int playerID;
      private int won;
-     private String fullname;
+     private String firstname;
+     private String lastname;
+     private String monthofjoining;
      private String level;
+     private int age;
+     private int height;
+     private int yearofexperience;
      private String footwearEvaluation;
+     
      
      public int getPlayerID() {
  		return playerID;
@@ -20,11 +26,11 @@ public class sports {
  	public void setPlayerId(int won) {
  		this.playerID = won;
  	}
-	public String getFullname() {
-		return fullname;
+	public String getFirstname() {
+		return firstname;
 	}
-	public void setFullname(String fullname) {
-		this.fullname = fullname;
+	public void setFirstname(String fullname) {
+		this.firstname = fullname;
 	}
 	public String getLevel() {
 		return level;
@@ -44,5 +50,36 @@ public class sports {
 	public void setWon(int won) {
 		this.won = won;
 	}
+	public String getLastname() {
+		return lastname;
+	}
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
+	}
+	public String getMonthofjoining() {
+		return monthofjoining;
+	}
+	public void setMonthofjoining(String monthofjoining) {
+		this.monthofjoining = monthofjoining;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public int getHeight() {
+		return height;
+	}
+	public void setHeight(int height) {
+		this.height = height;
+	}
+	public int getYearofexperience() {
+		return yearofexperience;
+	}
+	public void setYearofexperience(int yearofexperience) {
+		this.yearofexperience = yearofexperience;
+	}
      
 }
+
